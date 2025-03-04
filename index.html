@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Citizens offers personal and business banking, student loans, home equity products, credit cards, and more. You're made ready and so are we. &trade;">
+    <meta name="author" content="Tooplate">
+    <title>MyAccount | Login</title>
+
+    <!-- ... (Other meta tags, links to CSS files, and scripts) ... -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/apexcharts.css" rel="stylesheet">
+    <link href="css/tooplate-mini-finance.css" rel="stylesheet">
+
+    <!-- Additional CSS for the login form -->
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+        }
+
+        .login-form {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .login-logo img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .login-title {
+            margin-bottom: 20px;
+        }
+
+        .login-input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .login-button:hover {
+            background-color: #0056b3;
+        }
+
+        .error-message {
+            color: red;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .captcha-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #28a745;
+            border-top: 2px solid transparent;
+            border-right: 2px solid transparent;
+            border-radius: 50%;
+            animation: captcha-spin 10s linear infinite, captcha-check 0s ease-in-out 10s forwards;
+        }
+
+        .captcha-check {
+            width: 20px;
+            height: 20px;
+            background-color: #28a745;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+
+        @keyframes captcha-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(1800deg); } /* Spin 5 times (5 rotations) */
+        }
+
+        @keyframes captcha-check {
+            0% { display: none; }
+            100% { display: block; }
+        }
+
+        .forgot-password, .sign-up {
+            margin-top: 10px;
+        }
+
+        .forgot-password a, .sign-up a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .forgot-password a:hover, .sign-up a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar sticky-top flex-md-nowrap">
+        <!-- Header content... -->
+    </header>
+
+    <!-- Login Form -->
+    <div class="login-container">
+        <div class="login-form">
+            <div class="login-logo">
+                <img src="logo.svg" alt="Logo">
+            </div>
+            <h2 class="login-title">Login</h2>
+            <form>
+                <input type="text" id="username" class="login-input" placeholder="Username" required>
+                <input type="password" id="password" class="login-input" placeholder="Password" required>
+                <p class="error-message" id="error-message"></p>
+
+                <div class="forgot-password">
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+                <div class="sign-up">
+                    <a href="#">Sign Up</a>
+                </div>
+
+                <!-- Use JavaScript to verify and redirect on button click -->
+                <button type="button" class="login-button" onclick="verifyAndRedirect()">Login</button>
+                <span class="captcha-spinner"></span>
+                <span class="captcha-check">&#10003;</span>
+            </form>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-12">
+                    <p class="copyright-text">Copyright © Citizen Bank 2025
+                    - Design: <a rel="sponsored" href="#" target="_blank"></a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+<script>
+    function verifyAndRedirect() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username === "steven0282" && password === "j82@1@1") {
+            // Correct username and password, redirect to another HTML file in the same directory
+            window.location.href = "dsh.html";
+        } else {
+            // Incorrect username or password, show error message
+            document.getElementById("error-message").textContent = "Incorrect username or password. Please try again.";
+        }
+    }
+</script>

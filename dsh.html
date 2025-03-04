@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description"
+        content="Citizens offers personal and business banking, student loans, home equity products, credit cards, and more. You're made ready and so are we. &trade;">
+    <meta name="author" content="Tooplate">
+
+    <title>MyAccount | Personal Banking</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/apexcharts.css" rel="stylesheet">
+
+    <link href="css/tooplate-mini-finance.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header class="navbar sticky-top flex-md-nowrap">
+        <div class="col-md-3 col-lg-3 me-0 px-3 fs-6">
+            <a class="navbar-brand" href="dsh.html">
+                <img src="logo.png" alt="Logo" width="135" height="24"> <!-- Adjust the width and height values here -->
+            </a>
+        </div>
+
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <form class="custom-form header-form ms-lg-3 ms-md-3 me-lg-auto me-md-auto order-2 order-lg-0 order-md-0"
+            action="#" method="get" role="form">
+            <input class="form-control" name="search" type="text" placeholder="Search" aria-label="Search">
+        </form>
+
+        <div class="navbar-nav me-lg-2">
+            <div class="nav-item text-nowrap d-flex align-items-center">
+                <div class="dropdown ps-3">
+                    <a class="nav-link dropdown-toggle text-center" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" id="navbarLightDropdownMenuLink">
+                        <i class="bi-bell"></i>
+                        <span class="position-absolute start-100 translate-middle p-1">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-lg-end notifications-block-wrap bg-white shadow"
+                        aria-labelledby="navbarLightDropdownMenuLink">
+                        <small>Notifications</small>
+
+                        <li class="notifications-block border-bottom pb-2 mb-2">
+                            <a class="dropdown-item d-flex  align-items-center" href="#">
+                                <div class="notifications-icon-wrap bg-success">
+                                    <i class="notifications-icon bi-check-circle-fill"></i>
+                                </div>
+
+                                <div>
+                                    <span>Debit on account maintainance.</span>
+
+                                    <p>12 days ago</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="notifications-block border-bottom pb-2 mb-2">
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="notifications-icon-wrap bg-info">
+                                    <i class="notifications-icon bi-folder"></i>
+                                </div>
+
+                                <div>
+                                    <span>Debit on account maintainance.</span>
+
+                                    <p>42 days ago</p>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="notifications-block">
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="notifications-icon-wrap bg-danger">
+                                    <i class="notifications-icon bi-question-circle"></i>
+                                </div>
+
+                                <div>
+                                    <span>Attempted Login from unknown device failed.</span>
+
+                                    <p>1 hour ago</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="dropdown px-3">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="profilep.jpg" class="profile-image img-fluid" alt="">
+                    </a>
+                    <ul class="dropdown-menu bg-white shadow">
+                        <li>
+                            <div class="dropdown-menu-profile-thumb d-flex">
+                                <img src="profilep.jpg" class="profile-image img-fluid me-3" alt="">
+
+                                <div class="d-flex flex-column">
+                                    <small>STEVEN KYLE</small>
+                                    <a href="#">drstmj82@gmail.com</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="profile.html">
+                                <i class="bi-person me-2"></i>
+                                Profile
+                            </a>
+                        </li>
+
+
+                        <li class="border-top mt-3 pt-2 mx-4">
+                            <a class="dropdown-item ms-0 me-0" href="index.html">
+                                <i class="bi-box-arrow-left me-2"></i>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-3 d-md-block sidebar collapse">
+                <div class="position-sticky py-4 px-3 sidebar-sticky">
+                    <ul class="nav flex-column h-100">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="dsh.html">
+                                <i class="bi-house-fill me-2"></i>
+                                Dashboard
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="wallet.html">
+                                <i class="bi-wallet me-2"></i>
+                                My Account
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">
+                                <i class="bi-person me-2"></i>
+                                Profile
+                            </a>
+                        </li>
+
+                        <li class="nav-item featured-box mt-lg-5 mt-4 mb-4">
+                            <img src="images/credit-card.png" class="img-fluid" alt="">
+
+                            <a class="btn custom-btn" href="#">Upgrade</a>
+                        </li>
+
+                        <li class="nav-item border-top mt-auto pt-2">
+                            <a class="nav-link" href="index.html">
+                                <i class="bi-box-arrow-left me-2"></i>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="main-wrapper col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start">
+                <div class="title-group mb-3">
+                    <h1 class="h2 mb-0">Dashboard</h1>
+
+                    <small class="text-muted">Hello STEVEN KYLE, welcome back!</small>
+                </div>
+
+                <div class="row my-4">
+                    <div class="col-lg-7 col-12">
+                        <div class="custom-block custom-block-balance">
+                            <small>Your Balance</small>
+
+                            <h2 class="mt-2 mb-3">$15,536,683.33</h2>
+
+                            <div class="custom-block-numbers d-flex align-items-center">
+                                <span>****</span>
+                                <span>****</span>
+                                <span>****</span>
+                                <p>2560</p>
+                            </div>
+
+                            <div class="d-flex">
+                                <div>
+                                    <small>Valid Date</small>
+                                    <p>12/2028</p>
+                                </div>
+
+                                <div class="ms-auto">
+                                    <small>Card Holder</small>
+                                    <p>STEVEN KYLE</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="col-lg-5 col-12">
+                            <div
+                                class="custom-block custom-block-profile-front custom-block-profile text-center bg-white">
+                                <div class="custom-block-profile-image-wrap mb-4">
+                                    <img src="profilep.jpg" class="custom-block-profile-image img-fluid" alt="">
+
+                                    <a href="#" class="bi-pencil-square custom-block-edit-icon"></a>
+                                </div>
+
+                                <p class="d-flex flex-wrap mb-2">
+                                    <strong>Name:</strong>
+
+                                    <span>STEVEN KYLE</span>
+                                </p>
+
+                                <p class="d-flex flex-wrap mb-2">
+                                    <strong>Email:</strong>
+
+                                    <a href="#">
+                                        drstmj82@gmail.com
+                                    </a>
+                                </p>
+
+                                <p class="d-flex flex-wrap mb-0">
+                                    <strong>Phone:</strong>
+
+                                    <a href="#">
+                                        +1 (520) 720-0681
+                                    </a>
+                                </p>
+                            </div>
+
+                            <div class="custom-block custom-block-bottom d-flex flex-wrap">
+                                <!-- Send Button -->
+                                <div class="custom-block-bottom-item" onclick="showErrorModal()">
+                                    <a href="#" class="d-flex flex-column">
+                                        <i class="custom-block-icon bi-send"></i>
+                                        <small>Send</small>
+                                    </a>
+                                </div>
+
+                                <!-- Request Button -->
+                                <div class="custom-block-bottom-item" onclick="showErrorModal()">
+                                    <a href="#" class="d-flex flex-column">
+                                        <i class="custom-block-icon bi-arrow-down"></i>
+                                        <small>Request</small>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Error Modal -->
+                            <div id="errorModal" class="error-modal">
+                                <div class="error-modal-content">
+                                    <p>Account is restricted.</p>
+                                    <button onclick="closeErrorModal()">Close</button>
+                                </div>
+                            </div>
+
+                            <style>
+                                /* Error modal styles */
+                                .error-modal {
+                                    display: none;
+                                    position: fixed;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    background-color: rgba(0, 0, 0, 0.5);
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+
+                                .error-modal-content {
+                                    background-color: white;
+                                    padding: 20px;
+                                    border-radius: 8px;
+                                    text-align: center;
+                                    width: 300px;
+                                }
+
+                                .error-modal button {
+                                    background-color: #d70c08;
+                                    color: white;
+                                    border: none;
+                                    padding: 10px;
+                                    cursor: pointer;
+                                    border-radius: 4px;
+                                    margin-top: 10px;
+                                }
+
+                                .error-modal button:hover {
+                                    background-color: #d70c08;
+                                }
+                            </style>
+
+                            <script>
+                                // Function to show the error modal
+                                function showErrorModal() {
+                                    document.getElementById("errorModal").style.display = "flex";
+                                }
+
+                                // Function to close the error modal
+                                function closeErrorModal() {
+                                    document.getElementById("errorModal").style.display = "none";
+                                }
+                            </script>
+
+
+                            <div class="custom-block custom-block-transations">
+                                <h5 class="mb-4">Recent Transations</h5>
+
+                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <p>
+                                                <a href="#">Account maintainance</a>
+                                            </p>
+
+                                            <small class="text-muted">Successful</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="ms-auto">
+                                        <small>08/12/2023</small>
+                                        <strong class="d-block text-danger"><span class="me-1">-</span>
+                                            $1,000,000</strong>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <p>
+                                                <a href="#">Store</a>
+                                            </p>
+
+                                            <small class="text-muted">Payment Received</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="ms-auto">
+                                        <small>08/15/2023</small>
+                                        <strong class="d-block text-danger"><span class="me-1">-</span> $280</strong>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex flex-wrap align-items-center">
+                                    <div class="d-flex align-items-center">
+                                        <div>
+                                            <p><a href="#">Store</a></p>
+
+                                            <small class="text-muted">Payment Received</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="ms-auto">
+                                        <small>09/11/2022</small>
+                                        <strong class="d-block text-danger"><span class="me-1">-</span> $250, 000,
+                                            000</strong>
+                                    </div>
+                                </div>
+
+                                <div class="border-top pt-4 mt-4 text-center">
+                                    <a class="btn custom-btn" href="wallet.html">
+                                        View all transations
+                                        <i class="bi-arrow-up-right-circle-fill ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="site-footer">
+                        <div class="container">
+                            <div class="row">
+
+                                <div class="col-lg-12 col-12">
+                                    <p class="copyright-text">Copyright © Citizen Bank 2025
+                                        - Design: <a rel="sponsored" href="#" target="_blank"></a></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </footer>
+            </main>
+
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/apexcharts.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
